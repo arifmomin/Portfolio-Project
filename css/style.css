@@ -486,6 +486,68 @@ html{
     right: 0px;
 }
 /* ---------------------------client part end------------------------------- */
+/* ============================blog part start============================= */
+#blog-section{
+    padding-bottom: 120px;
+    background: #F9F9FF;
+}
+.blog-title{
+    margin-bottom: 76px;
+}
+.blog-title .common-heading{
+    text-align: center;
+    margin-bottom: 22px;
+}
+.blog-title .common-summery{
+    max-width: 714px;
+    text-align: center;
+    margin: auto;
+}
+.blog-activity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+.blog-image-link{
+	width: 100%;
+}
+.blog-image picture img{
+    height: 250px;
+    object-fit: contain;
+}
+.blog-user-info{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.blog-user-info picture img{
+    width: 30px;
+}
+.blog-user-name{
+    font: 400 14px var(--poppins);
+    color: var(--text-Color);
+}
+.blog-user{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.blog-item-heading{
+    font: 600 18px var(--poppins);
+    color: var(--text-Color);
+    text-transform: uppercase;
+    margin: 33px 0 14px;
+    transition: all linear .3s;
+}
+.blog-item-heading:hover, .blog-item-summery:hover{
+    color: #8490FF;
+}
+.blog-item-summery{
+    transition: all linear .3s;
+}
+/* ---------------------------blog part end------------------------------- */
 /* ============================contact part start============================= */
 #contact-section{
     padding: 100px 0 120px;
@@ -555,70 +617,7 @@ html{
     background: transparent;
     color: #8490FF; 
 }
-
 /* ---------------------------contact part end------------------------------- */
-/* ============================blog part start============================= */
-#blog-section{
-    padding: 120px 0;
-    background: #F9F9FF;
-}
-.blog-title{
-    margin-bottom: 76px;
-}
-.blog-title .common-heading{
-    text-align: center;
-    margin-bottom: 22px;
-}
-.blog-title .common-summery{
-    max-width: 714px;
-    text-align: center;
-    margin: auto;
-}
-.blog-activity{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #EEEEEE;
-}
-.blog-image-link{
-	width: 100%;
-}
-.blog-image picture img{
-    height: 250px;
-    object-fit: contain;
-}
-.blog-user-info{
-    display: flex;
-    align-items: center;
-    column-gap: 12px;
-}
-.blog-user-info picture img{
-    width: 30px;
-}
-.blog-user-name{
-    font: 400 14px var(--poppins);
-    color: var(--text-Color);
-}
-.blog-user{
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-}
-.blog-item-heading{
-    font: 600 18px var(--poppins);
-    color: var(--text-Color);
-    text-transform: uppercase;
-    margin: 33px 0 14px;
-    transition: all linear .3s;
-}
-.blog-item-heading:hover, .blog-item-summery:hover{
-    color: #8490FF;
-}
-.blog-item-summery{
-    transition: all linear .3s;
-}
-/* ---------------------------blog part end------------------------------- */
 /* ============================footer part start============================= */
 #footer-section{
     padding: 120px 0;
