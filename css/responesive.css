@@ -32,10 +32,10 @@
 }
 /* ------------------------menu part end------------------------ */
 /* ========================banner part start====================== */
-#Banner-section {
+#hero-section {
 	padding-top: 50px;;
 }
-.banner-heading {
+.hero-heading {
 	font: 600 36px/55px var(--poppins);
 }
 /* ------------------------banner part end------------------------ */

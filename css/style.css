@@ -85,34 +85,34 @@ html{
 }
 /* -----------------------------Navbar part end------------------------------ */
 /* ============================Banner part start============================= */
-#Banner-section{
+#hero-section{
     padding-top: 67px;
     width: 100%;
     background: #F9F9FF;
 }
-.banner-title{
+.hero-title{
     font: 400 14px/16.8px var(--poppins);
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--text-Color);
     margin-top: 121px;
 }
-.banner-heading{
+.hero-heading{
     margin: 20px 0 21px;
     font: 600 60px/72px var(--poppins);
     text-transform: uppercase;
     color: var(--text-Color);
 }
-.banner-head .common-summery{
+.hero-head .common-summery{
     max-width: 500px;
     margin-bottom: 17px;
 }
-.banner-image{
+.hero-image{
     width: 100%;
     display: flex;
     justify-content: end;
 }
-.banner-image picture img{
+.hero-image picture img{
     max-width: 483px;
 }
 /* ---------------------------banner part end------------------------------- */
