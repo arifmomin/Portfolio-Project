@@ -1,0 +1,697 @@
+/* =============================Common css start============================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+.common-heading{
+    font: 600 36px/43px var(--poppins);
+    color: var(--text-Color);
+}
+.common-summery{
+    text-wrap: wrap;
+    font: 400 14px var(--poppins);
+    color: var(--summery-text);
+}
+.common-btn{
+    padding: 11px 30px;
+    background: linear-gradient(360deg, #8490FF 0%, #62BDFC 100%);
+    border: none;
+    font: 500 15px var(--poppins);
+    color: white;
+    transition: all linear .2s;
+}
+.common-btn:hover {
+    box-shadow: 0px 20px 20px 0px rgba(132, 144, 255, 0.3);
+}
+html{
+    scroll-behavior: smooth;
+}
+/* -----------------------------Common css end------------------------------ */
+/* =============================Css veriable start========================== */
+:root{
+    --text-Color : #222222;
+    --summery-text : #777777;
+    --poppins:'Poppins', sans-serif;
+}
+/* ----------------------------Css veriable end----------------------------- */
+/* =============================Navbar part start============================ */
+#Navbar-bg{
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    background: white;
+    box-shadow: -21.21px 21.21px 30px rgba(158, 158, 158, 0.3);
+}
+.navbar-logo {
+    width: 75px;
+}
+.navbar-nav{
+    margin: auto;
+    margin-right: inherit !important;
+}
+.navbar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 32px;
+}
+.nav-item .nav-link{
+    font: 400 16px var(--poppins);
+    padding: 0 !important;
+    transition: all linear .2s;
+}
+.nav-item .nav-link:hover{
+    color: #8490FF !important;
+}
+/* -----------------------------Navbar part end------------------------------ */
+/* ============================Banner part start============================= */
+#Banner-section{
+    padding-top: 67px;
+    width: 100%;
+    background: #F9F9FF;
+}
+.banner-title{
+    font: 400 14px/16.8px var(--poppins);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-Color);
+    margin-top: 121px;
+}
+.banner-heading{
+    margin: 20px 0 21px;
+    font: 600 60px/72px var(--poppins);
+    text-transform: uppercase;
+    color: var(--text-Color);
+}
+.banner-head .common-summery{
+    max-width: 500px;
+    margin-bottom: 17px;
+}
+.banner-image{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.banner-image picture img{
+    max-width: 483px;
+}
+/* ---------------------------banner part end------------------------------- */
+/* ============================about part start============================= */
+#about-section{
+    padding: 120px 0;
+    background: white;
+}
+
+.about-image{
+    max-width: 540px;
+}
+.about-title{
+    font: 400 14px var(--poppins);
+    color: var(--text-Color);
+    text-transform: uppercase;
+}
+.about-head .common-heading{
+    text-transform: uppercase;
+    margin: 25px 0 36px;
+}
+.about-head .common-summery{
+    max-width: 500px;
+}
+.about-button .common-btn{
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+/* ---------------------------about part end------------------------------- */
+/* ============================service part start============================= */
+#service-section{
+    width: 100%;
+    padding-bottom: 160px;
+    background: white;
+}
+.service-head .common-heading{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.service-head .common-summery{
+    max-width: 626px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 67px;
+}
+.service-item-row{
+    row-gap: 76px;
+}
+.service-item-image{
+    width: 35px;
+    margin: auto;
+}
+.service-item-heading .service-item-title{
+    font: 600 18px/21px var(--poppins);
+    color: var(--text-Color);
+    text-align: center;
+    margin: 32px 0 18px;
+}
+.service-item{
+    transition: all linear .2s;
+}
+.service-item:hover .service-item-title{
+    color: #8490FF;
+}
+.service-item-heading .common-summery{
+    text-align: center;
+    max-width: 318px;
+    margin: auto;
+}
+/* ---------------------------service part end------------------------------- */
+/* ============================counter part start============================= */
+#counter-section{
+    padding: 120px 0;
+    background: linear-gradient(360deg, #8490FF 0%, #62BDFC 100%);;
+}
+.counter-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 150px;
+}
+.counter-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.counter-content .counter{
+    color: white !important;
+    font-weight: 700;
+}
+.counter-title{
+    font: 400 14px var(--poppins);
+    color: white;
+}
+/* ---------------------------counter part end------------------------------- */
+/* ============================Resume part start============================= */
+#resume-section{
+    padding: 100px 0;
+    background: white;
+}
+#resume-section .common-heading{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.nav-tabs {
+    --bs-nav-tabs-border-width: none !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 32px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    font: 500 16px var(--poppins);
+    color: var(--text-Color) !important;
+    position: relative;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: -9%;
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background: #8490FF;
+    transition: all linear .3s;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover::after{
+    width: 100%;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #8490FF !important;
+}
+.tab-content{
+    margin-top: 80px;
+}
+
+.Education-info{
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+.Education-info::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background: var(--summery-text);
+    opacity: 20%;
+}
+.education-left-item{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.education-left-item::after , .education-sector-right::after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 12.5px;
+    border-radius: 100%;
+    background: #8490FF;
+}
+.education-left-item::after {
+    top: 50%;
+    left: 49.39%;
+}
+.education-left-item::before, .education-sector-right::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 24px;
+    border-radius: 100%;
+    background: rgba(132, 144, 255, 0.218);
+}
+.first-before::before{
+    top: 72px;
+    left: 48.78%;
+}
+.secound-before::before{
+    top: 86px;
+    left: 48.78%;
+}
+.education-sector-right{
+    position: relative;
+}
+.education-sector-right::after {
+    top: 50%;
+    right: 49.2%;
+}
+.education-sector-right::before {
+    top: 47%;
+    right: 48.5%;
+}
+.education-item{
+    max-width: 360px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 10px 27px 3px rgba(204, 204, 204, 0.2);
+}
+.education-title{
+    font: 600 18px var(--poppins);
+    color: var(--text-Color);
+    text-align: center;
+}
+.education-institution{
+    font: 500 16px var(--poppins);
+    text-align: center;
+    color: var(--text-Color);
+    margin: 12px 0 12px;
+}
+.education-status{
+    font: 400 14px var(--poppins);
+    text-align: center;
+    color: var(--summery-text);
+}
+.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.skill-item{
+    font: 600 18px var(--poppins);
+    color: var(--text-Color);
+}
+.skill-item span{
+    margin-left: 10px;
+    font: 400 16px var(--poppins);
+    color: var(--text-Color);
+}
+.language-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.language-heading{
+    font: 600 24px var(--poppins);
+    color: var(--text-Color);
+}
+.language-list{
+    margin-top: 15px;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+.language-item{
+    font: 400 16px var(--poppins);
+    color: var(--summery-text);
+}
+.experience-row{
+    row-gap: 50px;
+}
+.experience-heading{
+    font: 600 20px var(--poppins);
+    color: var(--text-Color);
+}
+.experience-title{
+    margin: 6px 0;
+    font: 500 16px var(--poppins);
+    color: var(--text-Color);
+}
+.experience-duration{
+    margin-bottom: 16px;
+    font: 400 14px var(--poppins);
+    color: var(--summery-text);
+}
+.experience-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.experience-item{
+    font: 400 14px var(--poppins);
+    text-wrap: wrap;
+    color: var(--summery-text);
+    list-style: disc;
+}
+
+
+/* ---------------------------Resume part end------------------------------- */
+/* ============================portfolio part start============================= */
+#portfolio-section{
+    padding: 100px 0;
+    background: white;
+}
+.portfolio-row{
+    justify-content: space-between;
+    row-gap: 50px;
+}
+.portfolio-title .common-heading{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.portfolio-heading{
+    font: 600 18px var(--poppins);
+    color: var(--text-Color);
+    margin-bottom: 12px;
+}
+.portfolio-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.portfolio-item{
+    font: 400 14px var(--poppins);
+    color: var(--summery-text);
+    list-style: disc;
+}
+.portfolio-item span  {
+    margin-right: 5px;
+    font: 500 16px var(--poppins);
+    color: var(--text-Color);
+}
+/* ---------------------------portfolio part end------------------------------- */
+/* ============================client part start============================= */
+#client-section{
+    padding: 120px 0;
+    background: #F9F9FF;
+}
+.client-title .common-heading{
+    text-align: center;
+}
+.client-title .common-summery{
+    text-align: center;
+    margin: 7px 0 86px;
+}
+.client-item{
+    max-width: 550px;
+    padding: 25px 45px 30px 30px;
+    background: white;
+    display: flex;
+    justify-content: start;
+    column-gap: 20px;
+    margin: 0 50px;
+}
+.client-name{
+    font: 600 18px var(--poppins);
+    color: var(--text-Color);
+    margin: 15px 0 4px;
+}
+.client-position{
+    font: 400 16px var(--poppins);
+    color: var(--summery-text);
+}
+.prevArrow , .nextArrow{
+    width: 40px;
+    height: 40px;
+    background: white;
+    box-shadow: -14.14px 14.14px 20px rgba(157, 157, 157, 0.20);
+    position: absolute;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+}
+.prevArrow{
+    bottom: 110px;
+    right: 0px;
+}
+.nextArrow{
+    bottom: 65px;
+    right: 0px;
+}
+/* ---------------------------client part end------------------------------- */
+/* ============================contact part start============================= */
+#contact-section{
+    padding: 100px 0 120px;
+    background: white;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.contact-item{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.contact-left-item span i{
+    font-size: 31px;
+    color: #62BDFC;
+}
+.contact-heading{
+    font: 500 18px var(--poppins);
+    color: var(--text-Color);
+}
+.contact-col{
+    display: flex;
+    column-gap: 26px;
+}
+.contact-form-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+}
+.input-item input{
+    font: 400 16px var(--poppins);
+    color: var(--text-Color);
+    padding: 0 15px;
+    width: 100%;
+    height: 51px;
+    border: 1px solid rgba(119, 119, 119, 0.403);
+}
+.contact-form-right{
+    width: 50%;
+}
+.contact-form-right textarea{
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+}
+.message-button{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.contact-button{
+    margin-top: 30px;
+    padding: 10px 25px;
+    background: #8894FF;
+    font: 400 14px var(--poppins);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    transition: all linear .3s;
+    border: 2px solid #8490FF;
+}
+.contact-button:hover{
+    background: transparent;
+    color: #8490FF; 
+}
+
+/* ---------------------------contact part end------------------------------- */
+/* ============================blog part start============================= */
+#blog-section{
+    padding: 120px 0;
+    background: #F9F9FF;
+}
+.blog-title{
+    margin-bottom: 76px;
+}
+.blog-title .common-heading{
+    text-align: center;
+    margin-bottom: 22px;
+}
+.blog-title .common-summery{
+    max-width: 714px;
+    text-align: center;
+    margin: auto;
+}
+.blog-activity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+.blog-image-link{
+	width: 100%;
+}
+.blog-image picture img{
+    height: 250px;
+    object-fit: contain;
+}
+.blog-user-info{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.blog-user-info picture img{
+    width: 30px;
+}
+.blog-user-name{
+    font: 400 14px var(--poppins);
+    color: var(--text-Color);
+}
+.blog-user{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.blog-item-heading{
+    font: 600 18px var(--poppins);
+    color: var(--text-Color);
+    text-transform: uppercase;
+    margin: 33px 0 14px;
+    transition: all linear .3s;
+}
+.blog-item-heading:hover, .blog-item-summery:hover{
+    color: #8490FF;
+}
+.blog-item-summery{
+    transition: all linear .3s;
+}
+/* ---------------------------blog part end------------------------------- */
+/* ============================footer part start============================= */
+#footer-section{
+    padding: 120px 0;
+    background: #04091E;
+}
+.footer-heading{
+    font: 500 18px var(--poppins);
+    color: white;
+    margin-bottom: 24px;
+}
+.footer-item .common-summery{
+    max-width: 435px;
+    margin-bottom: 16px;
+}
+.footer-summery{
+    max-width: 450px;
+    font: 400 14px var(--poppins);
+    color: var(--summery-text);
+}
+.footer-summery i{
+    font-size: 14px;
+    color: var(--summery-text);
+}
+.footer-summery span{
+    color: #8490FF;
+}
+.Newsletter{
+    max-width: 445px;
+    height: 50px;
+    background: white;
+    display: flex;
+}
+.Newsletter input{
+    width: 80%;
+    height: 100%;
+    border: none;
+    padding: 0 15px;
+    font: 400 16px var(--poppins);
+    color: var(--text-Color);
+    background: transparent;
+}
+.Newsletter-message{
+    width: 20%;
+}
+.Newsletter-button{
+    width: 100%;
+    height: 100%;
+    background: #8490FF;
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+.Newsletter-button i{
+    transition: all linear .3s;
+}
+.Newsletter-button:hover i{
+    transform: translateX(5px);
+}
+.social-icon{
+    display: flex;
+    column-gap: 20px;
+}
+.social-icon a i{
+    font-size: 16px;
+    color: white;
+    transition: all linear .3s;
+}
+.social-icon a i:hover{
+    color: #8490FF;
+    transform: scale(1.1);
+}
+/* ---------------------------footer part end------------------------------- */
+
+
+
+
