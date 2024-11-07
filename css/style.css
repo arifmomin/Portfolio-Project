@@ -57,10 +57,23 @@ html{
 #Navbar-bg{
     padding: 15px 0;
     width: 100%;
-    position: fixed;
     z-index: 99999;
     background: white;
+}
+.navbar-fixed{
     box-shadow: -21.21px 21.21px 30px rgba(158, 158, 158, 0.3);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    animation: menu-fixed 1s;
+}
+@keyframes menu-fixed{
+    from{
+        top: -20%;
+    }
+    to{
+        top: 0%;
+    }
 }
 .navbar-logo {
     width: 75px;

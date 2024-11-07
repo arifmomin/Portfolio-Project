@@ -1,3 +1,18 @@
+// =======================menu bar fixed 
+const navbar = document.querySelector('#Navbar-bg');
+window.addEventListener('scroll' , () =>{
+  let scrolling = this.scrollY;
+  if(scrolling > 100){
+    navbar.classList.add('navbar-fixed');
+  }else{
+    navbar.classList.remove('navbar-fixed');
+  }
+})
+
+
+
+
+
 $('.counter').counterUp({
     delay: 10,
     time: 2000,
