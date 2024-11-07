@@ -67,6 +67,18 @@
 .first-before::before{
 	display: none;
 }
+.education-left-item {
+	justify-content: center;
+}
+.education-sector-right {
+	display: flex;
+	justify-content: center;
+}
+.Education-info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 35px;
+}
 .tab-content {
 	margin-top: 50px;
 }
